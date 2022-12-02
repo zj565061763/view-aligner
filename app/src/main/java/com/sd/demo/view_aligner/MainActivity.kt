@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(_binding.root)
     }
 
-    private val _aligner by lazy {
+    private val _aligner: ViewAligner by lazy {
         FViewAligner().apply {
             // 设置目标View
             setTarget(_binding.viewTarget)

@@ -6,7 +6,7 @@ plugins {
 
 def libGroupId = "com.sd.lib.android"
 def libArtifactId = "view-aligner"
-def libVersionName = "1.0.0-alpha07"
+def libVersionName = "1.0.0-alpha01"
 
 android {
     namespace 'com.sd.lib.valigner'
@@ -33,7 +33,7 @@ android {
 }
 
 dependencies {
-    api 'com.github.zj565061763:aligner:e502908c1d'
+    api 'com.github.zj565061763:aligner:1.0.0-alpha08'
 }
 
 task generateSourcesJar(type: Jar) {
