@@ -33,7 +33,7 @@ android {
 }
 
 dependencies {
-    api 'com.github.zj565061763:aligner:1.0.0-alpha08'
+    api 'com.github.zj565061763:aligner:1.0.0-beta02'
 }
 
 task generateSourcesJar(type: Jar) {

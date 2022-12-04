@@ -10,7 +10,6 @@ import java.lang.ref.WeakReference
 
 open class FViewAligner : FAligner(), ViewAligner {
     private val _coordinateTarget = IntArray(2)
-    private val _coordinateSource = IntArray(2)
     private val _coordinateContainer = IntArray(2)
 
     private var _position = Position.Center
@@ -64,7 +63,6 @@ open class FViewAligner : FAligner(), ViewAligner {
         }
 
         target.getLocationOnScreen(_coordinateTarget)
-        source.getLocationOnScreen(_coordinateSource)
         container.getLocationOnScreen(_coordinateContainer)
 
         val input = Aligner.Input(
@@ -72,9 +70,6 @@ open class FViewAligner : FAligner(), ViewAligner {
 
             targetX = _coordinateTarget[0],
             targetY = _coordinateTarget[1],
-
-            sourceX = _coordinateSource[0],
-            sourceY = _coordinateSource[1],
 
             containerX = _coordinateContainer[0],
             containerY = _coordinateContainer[1],

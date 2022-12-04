@@ -48,7 +48,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         logMsg { "(${x}, ${y})" }
         logMsg { "sourceOverflow: ${result.sourceOverflow}" }
-        logMsg { "targetOverflow: ${result.targetOverflow}" }
 
         val view = _binding.viewSource
         view.layout(x, y, x + view.measuredWidth, y + view.measuredHeight)
